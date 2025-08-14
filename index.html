@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pinterest</title>
+</head>
+<style>
+    .container {
+    margin-top: 90px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 5px;
+    justify-content: center;
+    grid-auto-flow: dense;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .item {
+    border-radius: 5px;
+    padding: 10px;
+    background: #f2f2f2;
+    position: relative;
+  }
+  .item figure {
+    margin: 0;
+  }
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .item .descripcion {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+    position: relative;
+    z-index: 3;
+  }
+  .level-1 {
+    grid-row-end: span 3;
+  }
+  .level-2 {
+    grid-row-end: span 2;
+  }
+  .level-3 {
+    grid-row-end: span 1;
+  }
+  .item:hover .overlay {
+    display: block;
+    cursor: zoom-in;
+  }
+</style>
+<body>
+  <div class="header">
+    <h1>Pinterest Project</h1>
+    <p>This is a simple example of a Pinterest layout using CSS Grid.</p>
+  </div>
+  <div class="container" id="project">
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-2">
+      <img src="img/tshirt.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-3">
+      <img src="img/house.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-2">
+      <img src="img/tshirt.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-3">
+      <img src="img/house.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-2">
+      <img src="img/tshirt.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-3">
+      <img src="img/house.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+    <div class="item level-2">
+      <img src="img/tshirt.jpg" alt="">
+    </div>
+    <div class="item level-3">
+      <img src="img/house.jpg" alt="">
+    </div>
+    <div class="item level-1">
+      <img src="img/landing.jpg" alt="">
+    </div>
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+</body>
+</html>
